@@ -1,0 +1,241 @@
+main {
+    padding: 0 90px;
+}
+
+img {
+    margin-bottom: 3rem;
+}
+
+
+/* Go back button */
+.btn-goback {
+    display: flex;
+    color: black;
+    margin: 3rem 0 2rem 0;
+}
+
+.btn-goback-h2 {
+    margin-left: 10px;
+    font-size: 1.3rem;
+}
+
+
+
+/* Case study intro container */
+.casestudy-container {
+    height: 255px;
+    padding: 45px 60px;
+    color: var(--black);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 5rem;
+    align-self: center;
+}
+
+.casestudy-container > h1 {
+    font-size: 2rem;
+}
+
+.casestudy-intro {
+    grid-column: 1/2;
+    font-size: 1.3rem;
+    line-height: 35px;
+}
+
+.casestudy-intro > div {
+    display: flex;
+}
+
+.p-strong {
+    font-weight: 700;
+}
+
+.p-italic {
+    color: var(--black);
+    margin-left: 10px;
+    font-style: italic;
+}
+
+#btn-see-online {
+    grid-column: 2/3;
+    height: 60px;
+    width: 150px;
+    background-color: var(--black);
+    color: var(--bage);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    left: 160px;
+    top: 10px;
+}
+
+/* Case study intro container in different colors*/
+.casestudy-container-coralred {
+    background-color: var(--coralred);
+}
+
+.casestudy-container-yellow {
+    background-color: var(--yellow);
+}
+
+.casestudy-container-blue {
+    background-color: var(--blue);
+}
+
+
+
+/* General style of mainText for all case studies */
+.casestudy-mainText {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 20px;
+}
+
+.casestudy-h2 {
+    font-family: 'Public Sans', sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.casestudy-p {
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+}
+
+/* Case study 1 */
+.casestudy-mainText1{
+    display: grid;
+   
+}
+
+.casestudy-mainText1-video {
+   
+}
+
+/* Case study 2 */
+.casestudy-mainText2{
+    display: grid;
+  
+}
+
+.casestudy-ul {
+    font-size: 20px;
+    margin-left: 2rem;
+    list-style: none;
+}
+
+.casestudy-ul > li {
+    margin-bottom: 1.3rem;
+}
+
+.casestudy-mainText2-img {
+    width: 600px;
+}
+
+
+/* Case study 3 */
+.casestudy-mainText3 {
+    display: grid;
+    
+}
+
+
+
+
+
+
+
+
+
+main {
+    padding: 0 50px; /* Reduce padding for smaller screens */
+}
+
+img {
+    margin-bottom: 2rem; /* Adjust margin for smaller screens */
+}
+
+/* Go back button */
+.btn-goback {
+    display: flex;
+    color: black;
+    margin: 2rem 0; /* Adjust margin for smaller screens */
+}
+
+.btn-goback-h2 {
+    margin-left: 10px;
+    font-size: 1.2rem; /* Reduce font size for smaller screens */
+}
+
+/* Case study intro container */
+.casestudy-container {
+    padding: 30px; /* Adjust padding for smaller screens */
+    margin-bottom: 3rem; /* Adjust margin for smaller screens */
+}
+
+.casestudy-container > h1 {
+    font-size: 1.8rem; /* Reduce font size for smaller screens */
+}
+
+.casestudy-intro {
+    font-size: 1.1rem; /* Reduce font size for smaller screens */
+    line-height: 30px; /* Adjust line height for smaller screens */
+}
+
+.p-italic {
+    margin-left: 5px; /* Adjust margin for smaller screens */
+}
+
+#btn-see-online {
+    height: 50px; /* Adjust button height for smaller screens */
+    width: 120px; /* Adjust button width for smaller screens */
+    font-size: 1rem; /* Reduce font size for smaller screens */
+    left: 130px; /* Adjust position for smaller screens */
+    top: 5px; /* Adjust position for smaller screens */
+}
+
+/* Media query for tablet screens */
+@media screen and (max-width: 1024px) {
+    main {
+        padding: 0 40px; /* Further reduce padding for tablet screens */
+    }
+}
+
+/* Media query for phone screens */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 0 10px; /* Further reduce padding for phone screens */
+    }
+
+    img {
+        margin-bottom: 1rem; /* Further adjust margin for phone screens */
+    }
+
+    .btn-goback-h2 {
+        font-size: 1rem; /* Further reduce font size for phone screens */
+    }
+
+    .casestudy-container {
+        padding: 10px; /* Further reduce padding for phone screens */
+        margin-bottom: 2rem; /* Further adjust margin for phone screens */
+        font-size: 0.9rem;
+    }
+
+    .casestudy-container > h1 {
+        font-size: 1.1rem; /* Further reduce font size for phone screens */
+    }
+
+    .casestudy-intro {
+        font-size: 0.5rem; /* Further reduce font size for phone screens */
+        line-height: 25px; /* Further adjust line height for phone screens */
+    }
+
+    #btn-see-online {
+        height: 40px; /* Further adjust button height for phone screens */
+        width: 100px; /* Further adjust button width for phone screens */
+        font-size: 0.9rem; /* Further reduce font size for phone screens */
+        left: 100px; /* Further adjust position for phone screens */
+        top: 3px; /* Further adjust position for phone screens */
+    }
+}

@@ -1,0 +1,224 @@
+main {
+    padding: 0 90px 0 100px;
+}
+
+.upper-line {
+    margin: 50px 0;
+}   
+
+.portfolio-grid-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 20px;
+    max-width: 1200px;
+}
+
+
+/* Show more button */
+.btn-showMore {
+    display: flex;
+    position: absolute;
+    width:200px;
+    left: 720px;
+    bottom: 50px;
+}
+
+.btn-showMore > h2 {
+    color: var(--black);
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+
+/* Case studies */
+.casestudies-h1 {
+    color: var(--black);
+    font-size: 2rem;
+    letter-spacing: 5px;
+    line-height: 60px;
+    white-space: pre-line;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.year {
+    color: var(--black);
+    font-style: italic;
+    position: relative;
+    width: 100px;
+}
+
+
+/* Case study 1 */
+.casestudy1 {
+    grid-row: 1/2;
+    background-color: var(--coralred);
+    height: 600px;
+    width: 949px;
+    position: relative;
+    left: 85px;
+}
+
+.casestudy1:hover video {
+    display: block;
+    animation: casestudy1-video-animation 2.5s ease-out
+}
+
+.casestudy1-h1 {
+    width: 350px;
+    position: relative;
+    right: 85px;
+    top: 180px;
+}
+
+.year1 {
+    left: 120px;
+    top: 185px;
+}
+
+.casestudy1-video {
+    display: none;
+    position: absolute;
+    left: 400px;
+    bottom: 135px;
+    width: 400px;
+}
+
+.casestudy1-video-animation {
+    overflow: hidden;
+}
+
+@keyframes casestudy1-video-animation {
+    0%   { 
+    transform: translateX(30%); 		
+    }
+}
+
+
+/* Case study 2 */
+.casestudy2 {
+    grid-row: 2/3;
+    background-color: var(--yellow);
+    height: 600px;
+    width: 949px;
+    position: relative;
+    left: 85px;
+}
+
+.casestudy2:hover img{
+    display: block;
+    animation: casestudy2-img-animation 2.5s ease-out
+}
+
+.casestudy2-h1 {
+    width: 350px;
+    position: relative;
+    right: 85px;
+    top: 145px;
+}
+
+.year2 {
+    left: 190px;
+    top: 155px;
+}
+
+.casestudy2-img{
+    display: none;
+    position: absolute;
+    left: 290px;
+    bottom: 155px;
+}
+
+.casestudy2-img-animation{
+    overflow: hidden;
+}
+
+@keyframes casestudy2-img-animation {
+    0%   { 
+    transform: translateX(30%); 		
+    }
+}
+
+
+/* Case study 3 */
+.casestudy3 {
+    grid-row: 3/4;
+    background-color: var(--blue);
+    height: 600px;
+    width: 949px;
+    position: relative;
+    left: 85px;
+}
+
+.casestudy3:hover img {
+    display: block;
+    animation: casestudy3-img-animation 2.5s ease-out;
+}
+
+.casestudy3-h1 {
+    position: relative;
+    right: 85px;
+    top: 180px;
+}
+
+.year3 {
+    left: 120px;
+    top: 185px;
+}
+
+.casestudy3-img {
+    display: none;
+    position: absolute;
+    left: 290px;
+    bottom: 150px;
+    width: 620px;
+}
+
+.asestudy3-img-animation{
+    overflow: hidden;
+}
+
+@keyframes casestudy3-img-animation {
+    0%   { 
+    transform: translateX(30%); 		
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    body {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .nav-grid-container {
+      grid-template-columns: 0.5fr; /* Adjust navigation grid for smaller screens */
+      gap: 10px; /* Add gap between navigation elements */
+      padding: 0 20px; /* Adjust padding */
+    }
+  
+    .nav-links {
+      justify-content: center; /* Center align navigation links */
+    }
+  
+    .nav-links > li {
+      margin-bottom: 10px; /* Add margin between navigation links */
+      text-align: center; /* Center align navigation links */
+    }
+  
+    .nav-links > li > a {
+      display: block; /* Make navigation links full-width */
+      padding: 10px; /* Add padding to navigation links */
+    }
+  
+    .footer-icons {
+      padding: 0 20px; /* Adjust padding for footer icons */
+    }
+  
+    .btn-contact-me {
+      margin: 0 auto; /* Center align contact button */
+    }
+  }
+

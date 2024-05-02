@@ -1,0 +1,191 @@
+main {
+    padding: 0 90px;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    color: var(--black);
+    text-align: center;
+    padding: 0.6rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+
+/* About me section */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    column-gap: 150px;
+    margin: 3rem 0 1.5rem 0; 
+}
+
+.h1-coralred {
+    background-color: var(--coralred) ;
+    width: 120px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.about-text {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.about-container-p1 {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+
+.about-container-p2 {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 40px;
+} 
+
+img {
+    width: 300px;
+    grid-column: 2/3;
+    grid-row: 1/3;
+} 
+
+/* Cv button */
+.btn-resume {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    height: 60px;
+    width: 150px;
+    background-color: var(--black);
+    color: var(--bage);
+    padding: 20px;
+    text-align: center;
+}
+
+.btn-resume > a {
+    color: var(--bage);
+}
+
+
+
+/* My skills section */
+.h1-yellow {
+    background-color: var(--yellow) ;
+    width: 200px;
+    margin-top: 3rem;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    column-gap: 30px;
+    margin: 2rem 0 2rem 0;
+}
+
+.skills-container2 {
+    margin-left: 50px;
+}
+
+.skills-container-h2 {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.skills-container-p {
+    margin-bottom: 10px;
+}
+
+/* Check out my work button */
+.btn-checkOut {
+    grid-column: 3/4;
+    margin: 20px 5px 50px 0;
+    width: 300px;
+}
+
+.btn-checkOut > a {
+    display: flex;
+}
+
+.btn-checkOut-h2 {
+    color: var(--black);
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+
+
+/* My hobbies section */
+.h1-blue {
+    background-color: var(--blue) ;
+    width: 450px;
+}
+
+.hobby-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 35px;
+    margin: 3rem 0 5rem 0;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    /* Adjust padding for main */
+    main {
+        padding: 0 20px;
+    }
+
+    /* Adjust font sizes */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Adjust grid layout */
+    .about-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        column-gap: 0;
+        margin: 2rem 0;
+    }
+
+    /* Adjust image size */
+    img {
+        width: 100%;
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    /* Adjust button styles */
+    .btn-resume,
+    .btn-checkOut {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Adjust skills container */
+    .skills-container {
+        grid-template-columns: 1fr;
+        margin: 2rem 0;
+    }
+
+    /* Adjust hobby container */
+    .hobby-container {
+        grid-template-columns: 1fr;
+        margin: 2rem 0;
+    }
+}
